@@ -3,10 +3,10 @@
 <template>
   <nav>
     <div class="wrapper">
-      <p>Monster Hunter API Monster List</p>
+      <p>Charater Hunter API Charater List</p>
       <div>
-        <button href="#" class="menu" @click="fetchMonster">
-          Monster List
+        <button href="#" class="menu" @click="fetchCharater">
+          Charater List
         </button>
       </div>
     </div>
