@@ -1,9 +1,12 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
+
 import useCharacters from '@/composables/useCharacters'
+
 const route = useRoute()
 const { fetchCharacter, currentCharacter } = useCharacters()
+
 onMounted(async () => {
   await fetchCharacter(route.params.id)
 })

@@ -2,7 +2,9 @@
 import { onMounted } from 'vue'
 import BaseCard from '@/components/BaseCard.vue'
 import useCharacters from '@/composables/useCharacters'
+
 const { characters, fetchCharacters, firstLoad } = useCharacters()
+
 onMounted(async () => {
   if (firstLoad.value) {
     await fetchCharacters()
